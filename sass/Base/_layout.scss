@@ -1,131 +1,213 @@
-// APP SETTINGS
+// APP SETTINGS LAYOUT
+
+
+// CUSTOMER FEATURES
 .header{
-  // background-color: var(--color-primary-dark);
-  grid-row: 1/2;
-  grid-column: full-start/col-start 6;
-
-  @media only screen and (max-width:$bp-large){
-    grid-row:1/2;
-    grid-column: full-start/full-end;
-     }
-}
-
-.dish-carousel{
-  background-image: linear-gradient(to right bottom, $color-primary-dark, #000);
-  grid-row: 1/2;
-  grid-column: col-start 6/ full-end;
-
-  @media only screen and (max-width:$bp-large){
-    grid-row:4/5;
-    grid-column: full-start/full-end;
-     }
-}
-
-.nav{
-  background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 1), rgba(#000, 0.98));
-
-  // background-image: linear-gradient(to right bottom, $color-primary-dark, #000);
-  grid-row:1/-1;
-
-  @media only screen and (max-width:$bp-normal-large){
     grid-row: 1/2;
+    grid-column: full-start/full-end;
+    	
+    @media only screen and (max-width:$bp-normal-large){
+        grid-column: side-start/ side-end;
+        grid-row: 1/16;
+       }
+
+    
+}
+.hero{
+    grid-row: 2/3;
+    grid-column: full-start/full-end;
+
+    @media only screen and (max-width:$bp-normal-large){ 
+        grid-row: 1/2;
+       }
+}
+.about{
+    grid-row:3/4;
     grid-column:full-start/full-end;
-
-    align-self:start;
-  }
-
-  
+    
+    // background-color:white;
 }
+.service-container{
+    grid-row:4/5;
+    grid-column: center-start/center-end;
 
-.most-rated{
- background-color: #fff;
-  grid-row:4/5;
-  grid-column:center-start/center-end;
-  font-size:1.4rem;
-
-  
-  @media only screen and (max-width:$bp-large){
+}
+.products{
     grid-row:5/6;
-   
-     }
+    grid-column: full-start/full-end;
 
 }
 
-.main{
-  // background-color:blue;
-  grid-row:2/3;
-  grid-column: full-start/full-end;
 
-  
-  
-}
 
-.dishes-form{
-  
-  grid-row:3/4;
-  grid-column:center-start/center-end;
-  grid-row-gap:8rem;
 
-  
 
-}
-.story{
+.solar{
 
-  grid-row:5/6;
-  grid-column:full-start/col-end 4;
-
-  
-  @media only screen and (max-width:$bp-large){
     grid-row:6/7;
+    grid-column: full-start/full-end;
+}
+
+.news{
+
+    grid-row:7/8;
+    grid-column: full-start/full-end;
+}
+
+.blog-platform{
+
+    grid-row:8/9;
+    grid-column:full-start/full-end;
+}
+
+.admin{
+    grid-row:9/10;
+    // grid-column: center-start/center-end;
+    grid-column: full-start/full-end;
+
+}
+
+.contact-form{
+    grid-row:10/11;
+    grid-column: center-start/center-end;
    
-     }
+}
 
-     @media only screen and (max-width:$bp-medium){
-  grid-column:full-start/full-end;
- grid-row:6/7;
-   }
+.product-container{
+    grid-row:11/12;
+    grid-column: center-start/center-end;
+    // grid-column: full-start/full-end;
+}
 
+.story{
+    grid-row:12/13;
+    grid-column: full-start / col-end 4;
 
-
+    @media only screen and (max-width:$bp-medium-medium){
+    
+        display:none;
+  
+         }
+  
 }
 
 .user-review{
-background-color:var(--color-grey-light-2);
-grid-row:5/6;
-grid-column: col-end 4/full-end ;
-// background-color: yellowgreen;
-
-
-@media only screen and (max-width:$bp-large){
-  grid-row:6/7;
- 
-   }
-@media only screen and (max-width:$bp-medium){
-  grid-row:7/8;
-  grid-column:full-start/full-end;
- 
-   }
+    grid-row:12/13;
+    grid-column:col-end 4 /full-end;
+    @media only screen and (max-width:$bp-medium-medium){
+    
+        grid-column:full-start/full-end;
+  
+         }
+  
 }
+
+.projects{
+    grid-row:13/14;
+    grid-column: full-start/full-end;
+ 
+}
+
 
 .footer{
- 
-  grid-column: 2/-1;
-  grid-row: 6/-1;
-  
-  @media only screen and (max-width:$bp-large){
-    grid-row:7/8;
-   
-     }
-
-     @media only screen and (max-width:$bp-normal-large){
-      grid-column:full-start/full-end;
-  
-    }
-
-
-    @media only screen and (max-width:$bp-medium){
-      grid-row:8/9;
-     
-       }
-
+    grid-row:15/-1;
+    grid-column: full-start/full-end;
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .blog{
+//     background-color: brown;
+// }
+// .product-catalog{
+//     background-color: yellow;
+// }
+// .solar-calculator{
+//     background-color: blue;
+// }
+// .consultation-booking{
+//     background-color: red;
+// }
+// .customer-portal{
+//     background-color: green;
+// }
+// .instant-quote-generator{
+//     background-color: orangered;
+// }
+// .live-chart{
+//     background-color: grey;
+// }
+// .educational-resources{
+//     background-color: purple;
+// }
+// .storie{
+//     background-color: pink;
+// }
+// .live-chart{
+//     background-color: violet;
+// }
+
+
+// .community-forum{
+//     background-color: indigo;
+// }
+// .agugmented-reality-visualizer{
+//     background-color: purple;
+// }
+// .energy-savings-tracker{
+//     background-color: antiquewhite;
+// }
+// .gamification-element{
+//     background-color: aquamarine;
+// }
+
+
+// // ADMINISTRATIVE
+// .cms{
+//     background-color: aqua
+// }
+// .educational-resources{
+//     background-color: purple;
+// }
+// .analysics{
+//     background-color:olive;
+// }
+// .payment{
+//     background-color:olivedrab;
+// }
+// .footer{
+//     background-color:black;
+// }

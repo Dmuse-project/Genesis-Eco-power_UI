@@ -1,5 +1,5 @@
 :root{
- 
+   --color-secondary: #005B41;
 
     --color-grey-light-1:#faf9f9;
     --color-grey-light-2:#f4f2f2;
@@ -10,43 +10,314 @@
     --color-grey-dark-2:#777;
     --color-grey-dark-3: #999;
 
+    --shadow-light-thin: box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.1);
+
     --shadow-dark:0 2rem 6rem rgba(0,0,0,.3);
     --shadow-dark-2:0 4px 8px rgba(0,0,0,0.3);
     --shadow-light: 0 2rem 5rem  rgba(0,0,0,.06);
+    --shadow-light-thick: 0 2rem 5rem  rgba(0,0,0,.07);
+    --shadow-natour: 0 1.5rem 4rem  rgba(0,0,0,.4);
+    --shadow-natour-dark: 0 2.5rem 4rem  rgba(0,0,0, .5);
 
     --line: 1px solid var(--color-grey-light-2);
+    --line-secondary: 1px solid var(--color-secondary);
 
     
-// // COLOR VARIABLES
-// --color-primary: #219ebcff;
-// --color-primary-dark: #023047ff;
-// --color-primary-light: #023047ff;
-
-// --color-secondary: #fb8500ff;
-// --color-secondary-light:#ffb703ff ;
 
 }
 
 
-$color-primary: #219ebcff;
-$color-primary-light: #023047ff;
-$color-primary-dark: #011e2c;
+
+// VIEWPOINT
+$bp-extra-large:87.5em;          //1400px
+$bp-medium-large:81.25em;       //1300px
+
+$bp-small-large:75em;          //1200px
+$bp-large:68.75em;            //1100px
+$bp-normal-large:62.5em;      //1000px
+
+$bp-medium-medium:56.25em;      //900px
+$bp-medium:43.75em;             //700px
+
+
+$bp-phone-large:37.5em;         //600px  
+$bp-phone-medium:31.25em;        //500px  
+
+
+$bp-small:25em;               //400px  
+$bp-tiny:18.75em;              //300px  
+
+
+
+
+
+// // COLOR VARIABLES
+
+$color-primary: #0a090c;
+$color-primary-dark: #0a090c;
+
+
+
+$color-secondary: #005B41;
+$color-secondary-light: #008170;
 $color-white:#fff;
 
-// $color-dark-grey:#999;
 
 
-// $color-secondary: #fb8500ff;
-// $color-secondary-light:#ffb703ff ;
 
-$color-secondary: #fb8600e0;
-$color-secondary-light:#ffb803dc;
+$color-tertiary-dark: #010318;
+$color-tertiary-light: #0c2555;
+$color-tertiary: #02122f;
+
+$color-grey-light-1:#faf9f9;
+$color-grey-light-2:#f4f2f2;
+$color-grey-light-3:#f0eeee;
+$color-grey-light-4:#ccc;
+
+
+
+$color-grey-dark-1:#333;
+
 
 
 
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
+$font-nunito: "Nunito", sans-serif;
+$font-poppins: "Poppins", sans-serif;
+
+
+
+
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    // font-weight: <weight>;
+    font-style: normal;
+  }
+
+
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+// //////////////////////
+// POPPINS
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
 
 
 // VIEWPOINT
@@ -82,47 +353,50 @@ $bp-tiny:18.75em;              //300px
 
 html{
     font-size:62.5%;
-    box-sizing:border-box;
+    // box-sizing:border-box;
 
-    
     @media only screen and (max-width:$bp-medium-large){
-        font-size:56.25%;
-       }
-    @media only screen and (max-width:$bp-small-large){
-        font-size:53.125%;
-       }
+      font-size:56.25%;
+     }
+  @media only screen and (max-width:$bp-small-large){
+      font-size:53.125%;
+     }
 
-    @media only screen and (max-width:$bp-normal-large){
-        font-size:50%;
-       }
+  @media only screen and (max-width:$bp-normal-large){
+      font-size:50%;
+     }
 
 
-        @media only screen and (max-width:$bp-medium){
-        font-size:40.63%;
-        // font-size:37.5%;
-    
-       }
-        @media only screen and (max-width:$bp-phone-large){
-        font-size:37.5%;
-       }
-        @media only screen and (max-width:$bp-phone-medium){
-        font-size:34.38%;
-       }
-        @media only screen and (max-width:$bp-small){
-        font-size:31.25%;
-       }
-        @media only screen and (max-width:$bp-tiny){
-        font-size:18.75%;
-       }
+      @media only screen and (max-width:$bp-medium){
+      font-size:40.63%;
+      // font-size:37.5%;
+  
+     }
 
- 
+      @media only screen and (max-width:$bp-phone-large){
+      font-size:37.5%;
+     }
+      @media only screen and (max-width:$bp-phone-medium){
+      font-size:34.38%;
+     }
+      @media only screen and (max-width:$bp-small){
+      font-size:31.25%;
+     }
+      @media only screen and (max-width:$bp-tiny){
+      font-size:18.75%;
+     }
+
+
 }
 
 body{
-    font-family: "Open Sans", sans-serif,;
+  
+    font-family: $font-nunito;
     font-weight: 400;
+    font-size:1.4rem;
     line-height:1.6;
     color: var(--color-grey-dark-2);
+  	// color:blue;
 
     // background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
     // background-size:cover;
@@ -132,32 +406,33 @@ body{
     
 }
 
+// .container{
+//     overflow:hidden;
+//     background-image: linear-gradient(to right bottom, var(--color-grey-light-1), #fff);
+
+//     display:grid;
+//     // grid-gap:3rem;
+//     // padding:3rem;
+//     grid-template-rows: 80vh  min-content 40vw  min-content min-content repeat(2, min-content);
+//     grid-template-columns: 6rem [full-start] minmax(3rem, 1fr) [center-start]repeat(8, [col-start] minmax(min-content, 14rem)[col-end])[center-end] minmax(3rem, 1fr) [full-end]; 
+
+// }
+
+
+
 .container{
-    overflow:hidden;
-    background-image: linear-gradient(to right bottom, var(--color-grey-light-1), #fff);
-
     display:grid;
-    // grid-gap:3rem;
-    // padding:3rem;
-    grid-template-rows: 80vh  min-content 40vw  min-content min-content repeat(2, min-content);
-    grid-template-columns: 6rem [full-start] minmax(3rem, 1fr) [center-start]repeat(8, [col-start] minmax(min-content, 14rem)[col-end])[center-end] minmax(3rem, 1fr) [full-end]; 
+    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start]  repeat(8,[col-start] minmax(min-content, 14rem)[col-end]) [center-end] minmax(3rem, 1fr) [full-end];
+    grid-template-rows:  7rem calc(100vh - 7rem ) min-content repeat(12, min-content) ;
 
-    @media only screen and (max-width:$bp-large){
-        grid-template-rows: 100vh  min-content 40vw  min-content min-content repeat(3, min-content);
-        grid-template-columns: 6rem [full-start] minmax(3rem, 1fr) [center-start]repeat(8, [col-start] minmax(min-content, 14rem)[col-end])[center-end] minmax(3rem, 1fr) [full-end]; 
-
-         }
-         
-  @media only screen and(max-width:$bp-normal-large){
-    grid-template-rows: 80vh  min-content 40vw  min-content min-content repeat(3, min-content);
-    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start]repeat(8, [col-start] minmax(min-content, 14rem)[col-end])[center-end] minmax(3rem, 1fr) [full-end]; 
+    @media only screen and (max-width:$bp-normal-large){
+      display:grid;
+      grid-template-columns: [side-start] 7rem [side-end full-start] minmax(3rem, 1fr) [center-start]  repeat(8,[col-start] minmax(min-content, 14rem)[col-end]) [center-end] minmax(3rem, 1fr) [full-end];
+      grid-template-rows:  calc(100vh - 7rem ) min-content repeat(12, min-content) ;
+  
+     }
 
   }
 
-  @media only screen and (max-width:$bp-medium){
-      grid-template-rows: 80vh   min-content min-content  min-content min-content repeat(4, min-content);
-    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start]repeat(8, [col-start] minmax(min-content, 14rem)[col-end])[center-end] minmax(3rem, 1fr) [full-end]; 
-
-  }
-}
+ 
 
