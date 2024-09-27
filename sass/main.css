@@ -920,7 +920,7 @@ option {
   box-shadow: var(--shadow-natour);
   padding: 3rem;
   margin: 4rem;
-  background-image: linear-gradient(105deg, rgba(0, 91, 65, 0.9) 0%, rgba(0, 91, 65, 0.9) 50%, transparent 50%), url("/img/hero_page_6.webp");
+  background-image: linear-gradient(105deg, rgba(0, 91, 65, 0.9) 0%, rgba(0, 91, 65, 0.9) 50%, transparent 50%), url("../img/hero_page_6.webp");
   background-size: cover;
 }
 
@@ -1271,7 +1271,7 @@ option {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(10, 9, 12, 0.93), rgba(10, 9, 12, 0.93)), url("../../img/hero_page_1.webp");
+  background-image: linear-gradient(rgba(10, 9, 12, 0.93), rgba(10, 9, 12, 0.93)), url("./../img/hero_page_1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2310,6 +2310,7 @@ nav {
 section h2 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
+  color: #008170;
 }
 
 .cards {
@@ -2545,7 +2546,7 @@ main section ol {
   grid-template-rows: repeat(6, 1fr);
   align-items: center;
   box-shadow: var(--shadow-light);
-  background-image: linear-gradient(rgba(10, 9, 12, 0.5), rgba(10, 9, 12, 0.5)), url("/img/hero_page_3.webp");
+  background-image: linear-gradient(rgba(10, 9, 12, 0.5), rgba(10, 9, 12, 0.5)), url("../img/hero_page_3.webp");
   background-size: cover;
   background-position: center;
 }

@@ -193,7 +193,7 @@
       rgba($color-primary, 0.93),
       rgba($color-primary, 0.93)
     ),
-    url("../../img/hero_page_1.webp");
+    url("./../img/hero_page_1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1618,7 +1618,7 @@ nav {
 section h2 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
-  
+  color:$color-secondary-light;
 }
 
 .cards {
@@ -1931,7 +1931,7 @@ main section ol {
       rgba($color-primary-dark, 0.5),
       rgba($color-primary-dark, 0.5)
     ),
-    url("/img/hero_page_3.webp");
+    url("../img/hero_page_3.webp");
 
   background-size: cover;
   background-position: center;
