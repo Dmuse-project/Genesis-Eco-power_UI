@@ -1271,7 +1271,7 @@ option {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(10, 9, 12, 0.93), rgba(10, 9, 12, 0.93)), url("./../img/hero_page_1.webp");
+  background-image: linear-gradient(rgba(10, 9, 12, 0.88), rgba(10, 9, 12, 0.88)), url("./../img/hero_page_1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
