@@ -2607,6 +2607,11 @@ main section ol {
           mask-image: url(../img/SVG4/stack-overflow.svg);
           margin-right: 1rem;
         }
+        &--8 {
+          -webkit-mask-image: url(../img/SVG_Gen1/facebook-square.svg);
+          mask-image: url(../img/SVG_Gen1/facebook-square.svg);
+          margin-right: 0rem;
+        }
       }
     }
 
@@ -2620,8 +2625,8 @@ main section ol {
 
       text-align: center;
       padding: 1.5rem;
-      display: block;
-
+      display: flex;
+      justify-content:center;
       transition: all 0.3s;
     }
 

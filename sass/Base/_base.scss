@@ -423,12 +423,12 @@ body{
 .container{
     display:grid;
     grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start]  repeat(8,[col-start] minmax(min-content, 14rem)[col-end]) [center-end] minmax(3rem, 1fr) [full-end];
-    grid-template-rows:  7rem calc(100vh - 7rem ) min-content repeat(12, min-content) ;
+    grid-template-rows:  7rem calc(100vh - 7rem ) min-content repeat(14, min-content) ;
 
     @media only screen and (max-width:$bp-normal-large){
       display:grid;
       grid-template-columns: [side-start] 7rem [side-end full-start] minmax(3rem, 1fr) [center-start]  repeat(8,[col-start] minmax(min-content, 14rem)[col-end]) [center-end] minmax(3rem, 1fr) [full-end];
-      grid-template-rows:  calc(100vh - 7rem ) min-content repeat(12, min-content) ;
+      grid-template-rows:  calc(100vh - 7rem ) min-content repeat(14, min-content) ;
   
      }
 

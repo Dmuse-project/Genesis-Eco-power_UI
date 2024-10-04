@@ -8,7 +8,7 @@
     	
     @media only screen and (max-width:$bp-normal-large){
         grid-column: side-start/ side-end;
-        grid-row: 1/16;
+        grid-row: 1/18;
        }
 
     
@@ -60,6 +60,7 @@
     grid-column:full-start/full-end;
 }
 
+
 .admin{
     grid-row:9/10;
     // grid-column: center-start/center-end;
@@ -79,8 +80,15 @@
     // grid-column: full-start/full-end;
 }
 
-.story{
+
+.demi-form{
     grid-row:12/13;
+    grid-column: center-start/center-end;
+   
+}
+
+.story{
+    grid-row:13/14;
     grid-column: full-start / col-end 4;
 
     @media only screen and (max-width:$bp-medium-medium){
@@ -92,7 +100,7 @@
 }
 
 .user-review{
-    grid-row:12/13;
+    grid-row:13/14;
     grid-column:col-end 4 /full-end;
     @media only screen and (max-width:$bp-medium-medium){
     
@@ -103,14 +111,20 @@
 }
 
 .projects{
-    grid-row:13/14;
+    grid-row:14/15;
     grid-column: full-start/full-end;
  
 }
 
+.blog{
+
+    grid-row:16/17;
+    grid-column:full-start/full-end;
+}
+
 
 .footer{
-    grid-row:15/-1;
+    grid-row:17/-1;
     grid-column: full-start/full-end;
     
 }
