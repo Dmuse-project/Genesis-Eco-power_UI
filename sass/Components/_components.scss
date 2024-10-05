@@ -1200,7 +1200,89 @@ color:rgba(#fff, 0.8)
 
 ////////////////////////////////////////////////
 /// BLOG INTERFACE!
+
+.blog--container{
+  display:grid;
+  grid-template-rows:repeat(4, min-content);
+  grid-template-columns:repeat(2, 1fr);
+
+
+  margin-top:8rem;
+  margin-bottom:-4rem;
+
+
+
+  &__heading{
+    grid-row:1/2;
+    grid-column:1/3;
+    text-align:center;
+    font-weight:bold;
+  
+
+    background-image: linear-gradient(to right bottom, #0c2555, #010318);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    
+  }
+  &__sub-heading{
+    grid-row:2/3;
+    grid-column:1/3;
+
+  padding: 0.5rem;
+  display: flex;
+  align-items: end;
+  border-bottom: 2px solid $color-secondary-light;
+  margin-bottom: -5rem;
+  margin-left: 8rem;
+  width:80%;
+
+  span{
+    color:$color-secondary;
+    margin-left:0.5rem;
+    font-weight:bold;
+    font-family:$font-primary;
+  }
+  @media only screen and (max-width:$bp-small-large){
+    width:80%;
+    }
+    
+    @media only screen and (max-width:$bp-normal-large){
+      width:62%;
+      }
+  }
+  &__link{
+    grid-row:2/3;
+    grid-column:2/3;
+    display:grid;
+    align-self:end;
+    justify-self:center;
+    // background: orangered;
+    margin-bottom: -5rem;
+    margin-left: 8rem;
+    
+    @media only screen and (max-width:$bp-small-large){
+     width:31%;
+     }
+
+     @media only screen and (max-width:$bp-normal-large){
+      justify-self:start;
+      }
+    
+    
+  }
+
+
+}
+
+
+
+
 .blog{
+grid-row:3/4;
+grid-column:1/3;
+
+
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(35rem, min-content));
   grid-gap:2rem;
@@ -1271,7 +1353,7 @@ color:rgba(#fff, 0.8)
       text-decoration: none;
       font-size:1.6rem;
       color:inherit;
-      
+      margin-left:1rem;
      
       z-index:4;
       
